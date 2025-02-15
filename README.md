@@ -1,71 +1,90 @@
-# CryptoSage: Advanced Cryptocurrency Analysis with Machine Learning
+# CryptoSage
 
-## Author
-T. Landon Love  
-12 Stone Designs (12stonedesigns@gmail.com)
+Advanced Cryptocurrency Analysis with Machine Learning
 
-## Description
-CryptoSage is an advanced intermarket analysis system that explores the relationships between cryptocurrency markets (Bitcoin and Ethereum) and traditional markets (NASDAQ) using sophisticated technical indicators and machine learning approaches.
+## Overview
 
-## Key Features
-- Real-time data fetching using yfinance API
-- Custom technical indicators including RSI, Williams %R, and Moving Averages
-- RIPPER algorithm implementation for rule-based classification
-- ARIMA time-series modeling for price direction prediction
-- Enhanced visualization of market trends and indicators
-- Comprehensive error handling and data validation
+CryptoSage is a Python-based cryptocurrency analysis tool that combines technical analysis with machine learning to provide insights into cryptocurrency market trends. It features:
 
-## Technical Implementation
-- **Data Collection**: Historical price data for BTC-USD, ETH-USD, and NASDAQ (^NDX)
-- **Feature Engineering**: Custom technical indicators using pandas_ta
-- **Machine Learning**: Rule-based classifier (RIPPER) for Bitcoin price direction prediction
-- **Time Series Analysis**: ARIMA modeling for Ethereum price forecasting
-- **Performance Evaluation**: RMSE-based model assessment
-- **Visualization**: Enhanced plots for technical indicators and predictions
-
-## Dependencies
-```
-numpy
-pandas
-seaborn
-yfinance
-matplotlib
-pandas_ta
-scikit-learn
-wittgenstein
-statsmodels
-```
+- Real-time market data fetching
+- Custom technical indicators
+- Machine learning-based price direction prediction
+- Time series analysis using ARIMA models
+- Advanced data visualization
 
 ## Installation
-Install the required packages using pip:
+
+1. Clone the repository:
 ```bash
-pip install numpy pandas seaborn yfinance matplotlib pandas_ta scikit-learn wittgenstein statsmodels
+git clone https://github.com/yourusername/CryptoSage.git
+cd CryptoSage
+```
+
+2. Create and activate a virtual environment (recommended):
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage
-Run the analysis script:
+
+Run the main analysis script:
 ```bash
-python cryptosage.py
+python main.py
 ```
 
-The script will:
-1. Fetch market data for Bitcoin, Ethereum, and NASDAQ
-2. Calculate technical indicators
-3. Display correlation matrices and Williams %R indicators
-4. Train and evaluate the RIPPER classifier for Bitcoin price prediction
-5. Train and evaluate the ARIMA model for Ethereum price forecasting
-6. Generate visualizations of the results
+This will:
+- Fetch current market data for Bitcoin, Ethereum, and NASDAQ
+- Calculate technical indicators
+- Generate correlation matrices and visualizations
+- Train and evaluate machine learning models
+- Display price predictions
 
-## Output
-The script generates several visualizations:
-- Correlation matrices for market relationships
-- Williams %R indicators for each asset
-- ARIMA model predictions vs actual values
-- Technical indicator plots
+## Project Structure
 
-It also outputs:
-- RIPPER classification rules for Bitcoin price prediction
-- ARIMA model RMSE for Ethereum price forecasting
+```
+CryptoSage/
+├── data/               # Data storage directory
+├── docs/              # Documentation
+├── src/               # Source code
+│   └── cryptosage/    
+│       ├── __init__.py
+│       └── analyzer.py
+├── tests/             # Test files
+├── main.py            # Main entry point
+├── README.md          # Project documentation
+└── requirements.txt   # Project dependencies
+```
 
-## Note
-CryptoSage provides insights into market relationships and potential trading opportunities through a combination of traditional technical analysis and modern machine learning approaches. The results should not be considered financial advice.
+## Features
+
+- **Market Data Analysis**
+  - Real-time data fetching using yfinance
+  - Custom technical indicators including RSI, Moving Averages, and Williams %R
+
+- **Machine Learning Models**
+  - RIPPER algorithm for price direction classification
+  - ARIMA models for time series prediction
+
+- **Visualization**
+  - Correlation matrices
+  - Technical indicator plots
+  - Price prediction visualizations
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author
+
+T. Landon Love  
+12 Stone Designs (12stonedesigns@gmail.com)

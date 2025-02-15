@@ -1,0 +1,9 @@
+numpy>=2.2.0
+pandas>=2.2.3
+seaborn>=0.13.2
+yfinance>=0.2.52
+matplotlib>=3.9.3
+scikit-learn>=1.6.0
+wittgenstein>=0.3.4
+statsmodels>=0.14.4
+ta>=0.10.2
