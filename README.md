@@ -88,3 +88,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 T. Landon Love  
 12 Stone Designs (12stonedesigns@gmail.com)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
