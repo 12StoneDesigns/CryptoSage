@@ -16,7 +16,7 @@ CryptoSage is a Python-based cryptocurrency analysis tool that combines technica
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/CryptoSage.git
+git clone https://github.com/12StoneDesigns/CryptoSage.git
 cd CryptoSage
 ```
 
@@ -78,11 +78,7 @@ CryptoSage/
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+Contributions are welcome! Please feel free to submit a Pull Request to https://github.com/12StoneDesigns/CryptoSage.
 
 ## Author
 
